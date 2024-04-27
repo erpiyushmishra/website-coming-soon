@@ -19,6 +19,14 @@ function countDown(){
     document.getElementById("hours").textContent=hours;
     document.getElementById("mins").textContent=mins;
     document.getElementById("seconds").textContent=seconds;
+    if (distance<=0){
+        clearInterval(x);
+        document.getElementById("days").textContent="00";
+        document.getElementById("hours").textContent="00";
+        document.getElementById("mins").textContent="00";
+        document.getElementById("seconds").textContent="00";
+    }
+        
 
     
 
